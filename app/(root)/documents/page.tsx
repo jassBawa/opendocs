@@ -39,6 +39,7 @@ const Home = async () => {
             />
           </div>
           <ul className="document-ul">
+            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
             {roomDocuments.data.map(({ id, metadata, createdAt }: any) => (
               <li key={id} className="document-list-item">
                 <Link

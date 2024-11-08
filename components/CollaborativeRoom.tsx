@@ -84,6 +84,7 @@ const CollaborativeRoom = ({
                 <Input
                   type="text"
                   value={documentTitle}
+                  // @ts-expect-error eslint-disable-next-line
                   ref={inputRef}
                   placeholder="Enter title"
                   onChange={(e) => setDocumentTitle(e.target.value)}
